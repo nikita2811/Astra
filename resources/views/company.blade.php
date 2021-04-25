@@ -1,0 +1,1 @@
+<button type="submit"><a href="{{url('company_data')}}">data</button>
