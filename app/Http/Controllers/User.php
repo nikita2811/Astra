@@ -44,7 +44,7 @@ class User extends Controller
             }
 
 
-           }
+           }//for j
 
            if($present1 == 0 ){
         
@@ -54,20 +54,20 @@ class User extends Controller
 
         
 
-    }
+    }//ifpresent1
       if($present2 == 0 ){
        
         $v1=explode(' ',$file2);
-       print_r($v1)
+       print_r($v1);
        
         //print($file2.'exists in v1');
         
 
        
-    } 
+    } //if present2
 
            
-        }
+        }//for i
          
    // return view('dashboard',['v1'=>$v1,'v2'=>$v2,'comman'=>$comman]);
 
