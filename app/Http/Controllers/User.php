@@ -49,7 +49,7 @@ class User extends Controller
            if($present1 == 0 ){
         
        $v2=explode(' ',$file1);
-      
+      print_r($v2);
         //print($file1.' exists in v2');
 
         
@@ -58,7 +58,7 @@ class User extends Controller
       if($present2 == 0 ){
        
         $v1=explode(' ',$file2);
-       
+       print_r($v1)
        
         //print($file2.'exists in v1');
         
@@ -69,7 +69,7 @@ class User extends Controller
            
         }
          
-    return view('dashboard',['v1'=>$v1,'v2'=>$v2,'comman'=>$comman]);
+   // return view('dashboard',['v1'=>$v1,'v2'=>$v2,'comman'=>$comman]);
 
        }
           
@@ -88,44 +88,6 @@ class User extends Controller
          
    
 
-   public function exists_both(){
-     $v1_files = Storage::disk('public')->allFiles('v1');
-     $v2_files = Storage::disk('public')->allFiles('v2');
-
-
-    
-     $comman =[];
-     
-     for ($i=0; $i < count($v1_files); $i++) { 
-        
-        $v1_filename =explode('/',$v1_files[$i]);
-        
-
-        
-     
-       
-        for ($j=0; $j <count($v2_files) ; $j++) { 
-            $v2_filename =explode('/',$v2_files[$j]);
-            
-
-           
-        if($v1_filename[1] ==$v2_filename[1]){
-             array_push($comman,$v1_filename[1]);
-           
-          
-          
-    
-    }
-
-   
-       
-        }
-     
-
-    print_r($comman);
   
-     }
-    
-   }
     
 }
