@@ -68,6 +68,7 @@ class User extends Controller
 
            
         }//for i
+        print_r($comman);
          
    // return view('dashboard',['v1'=>$v1,'v2'=>$v2,'comman'=>$comman]);
 
