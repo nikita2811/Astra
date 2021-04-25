@@ -49,7 +49,7 @@ class User extends Controller
            if($present1 == 0 ){
         
        $v2=explode(' ',$file1);
-      print_r($v2);
+      print_r($file1);
         //print($file1.' exists in v2');
 
         
@@ -58,7 +58,7 @@ class User extends Controller
       if($present2 == 0 ){
        
         $v1=explode(' ',$file2);
-       print_r($v1);
+       print_r($file2);
        
         //print($file2.'exists in v1');
         
