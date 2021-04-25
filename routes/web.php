@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('file_exist');
+    return view('welcome');
 });
 Route::get('/file_exist','User@file_exist')->name('file_exist');
